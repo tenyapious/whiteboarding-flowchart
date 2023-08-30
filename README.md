@@ -13,3 +13,5 @@
 [Return the sum of all the data (n) of a linked list](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=return%20sum%20of%20'n'%20value%20of%20nodes%20in%20a%20linked.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Ftenyapious%2Fwhiteboarding-flowchart%2Fmain%2Freturn%2520sum%2520of%2520'n'%2520value%2520of%2520nodes%2520in%2520a%2520linked.drawio)
 
 [Insert new node at an index of a linked list](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=insert%20node%20at%20an%20index.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Ftenyapious%2Fwhiteboarding-flowchart%2Fmain%2Finsert%2520node%2520at%2520an%2520index.drawio)
+
+[Delete node at an index of a linked list](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=delete%20node%20at%20an%20index%20of%20a%20linked%20list.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Ftenyapious%2Fwhiteboarding-flowchart%2Fmain%2Fdelete%2520node%2520at%2520an%2520index%2520of%2520a%2520linked%2520list.drawio)
