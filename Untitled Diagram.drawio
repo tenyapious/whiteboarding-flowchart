@@ -1,9 +1,36 @@
-<mxfile host="app.diagrams.net" modified="2023-09-06T17:26:07.430Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="21.7.2" etag="GNNydM1Lxtcu4VeXC_AN" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-07T01:04:27.465Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="xQuFek-CSC06vz1McUhb" version="21.7.2" type="github">
   <diagram name="Page-1" id="wh3zebOXGbLDkjqrhMII">
-    <mxGraphModel>
+    <mxGraphModel dx="1247" dy="698" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="S1wYOhdij1Duce8HYKlX-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="S1wYOhdij1Duce8HYKlX-1" target="S1wYOhdij1Duce8HYKlX-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S1wYOhdij1Duce8HYKlX-1" value="start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="220" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="S1wYOhdij1Duce8HYKlX-3" value="create a buffer for 1024 chars" style="whiteSpace=wrap;html=1;align=center;spacingLeft=0;spacingRight=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S1wYOhdij1Duce8HYKlX-7" value="read 1024 bytes into the buffer" style="whiteSpace=wrap;html=1;align=left;spacingLeft=10;spacingRight=10;" vertex="1" parent="1">
+          <mxGeometry x="550" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S1wYOhdij1Duce8HYKlX-8" value="open the file to copy from&lt;br&gt;&lt;br&gt;open the file to write to" style="whiteSpace=wrap;html=1;align=center;spacingLeft=0;spacingRight=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="220" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="S1wYOhdij1Duce8HYKlX-12" value="write byte_read amount to file" style="whiteSpace=wrap;html=1;spacingLeft=10;spacingRight=10;" vertex="1" parent="1">
+          <mxGeometry x="705" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S1wYOhdij1Duce8HYKlX-19" value="write&amp;nbsp;" style="whiteSpace=wrap;html=1;align=left;spacingLeft=10;spacingRight=10;" vertex="1" parent="1">
+          <mxGeometry x="860" y="230" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S1wYOhdij1Duce8HYKlX-21" value="byte_read == 0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="210" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="S1wYOhdij1Duce8HYKlX-22" value="false" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="735" y="300" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
