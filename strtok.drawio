@@ -1,11 +1,69 @@
-<mxfile host="app.diagrams.net" modified="2023-09-10T15:04:05.488Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="kM1ARjtdTDrVFJKky4Mt" version="21.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-10T15:56:03.966Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="6UBiBzHzgVGDcDzR86t6" version="21.7.4" type="github">
   <diagram name="Page-1" id="HyWvBBOBCmtNqRfnJLSK">
     <mxGraphModel dx="1434" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="jJlPswedMzSWKCKwxa1O-1" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="360" width="120" height="80" as="geometry" />
+        <mxCell id="jJlPswedMzSWKCKwxa1O-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jJlPswedMzSWKCKwxa1O-12" target="jJlPswedMzSWKCKwxa1O-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-12" value="getline" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="170" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-16" value="get command from stdin" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="jJlPswedMzSWKCKwxa1O-12">
+          <mxGeometry x="25" y="30" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jJlPswedMzSWKCKwxa1O-13" target="jJlPswedMzSWKCKwxa1O-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-13" value="strtok" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="170" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-17" value="tokenize command" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="198" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jJlPswedMzSWKCKwxa1O-18" target="jJlPswedMzSWKCKwxa1O-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-18" value="fork" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="640" y="140" width="270" height="260" as="geometry">
+            <mxRectangle x="640" y="140" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-20" value="create a child process&lt;br&gt;(which is basically, creating a copy&lt;br&gt;of the current process and below is why&lt;br&gt;you have to do that)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="jJlPswedMzSWKCKwxa1O-18">
+          <mxGeometry x="20" y="40" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-28" value="&lt;ul&gt;&lt;li&gt;when you call execve&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;the current process&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;i.e the fn that calls execve&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;is terminated&lt;/li&gt;&lt;li&gt;so the code after execv is lost&lt;/li&gt;&lt;li&gt;&amp;nbsp;&lt;/li&gt;&lt;li&gt;in the e.g code &quot;Before execve&quot; is printed&lt;/li&gt;&lt;li&gt;but &quot;After execve&quot; is not printed&lt;/li&gt;&lt;li&gt;for the same reason explained earlier&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=top;overflow=hidden;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" vertex="1" parent="jJlPswedMzSWKCKwxa1O-18">
+          <mxGeometry y="100" width="270" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-32" value="&lt;pre style=&quot;box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; display: block; padding: 9.5px; margin: 0px 0px 10px; line-height: 1.42857; color: rgb(51, 51, 51); word-break: break-all; overflow-wrap: break-word; background-color: rgb(245, 245, 245); border: 1px solid rgb(204, 204, 204); border-radius: 4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: inherit; padding: 0px; color: inherit; background-color: transparent; border-radius: 0px;&quot;&gt;int main(void)&lt;br&gt;{&lt;br&gt;    char *argv[] = {&quot;/bin/ls&quot;, &quot;-l&quot;, &quot;/usr/&quot;, NULL};&lt;br&gt;&lt;br&gt;    printf(&quot;Before execve\n&quot;);&lt;br&gt;    execve(argv[0], argv, NULL)&lt;br&gt;    printf(&quot;After execve\n&quot;);&lt;br&gt;    return (0);&lt;br&gt;}&lt;/code&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="260" width="430" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jJlPswedMzSWKCKwxa1O-28" target="jJlPswedMzSWKCKwxa1O-32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="775" y="420" />
+              <mxPoint x="605" y="420" />
+              <mxPoint x="605" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-43" value="execve" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="148" width="200" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-51" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;use the child process created&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;to call execve&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;i.e run other programs using&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;child processes&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="jJlPswedMzSWKCKwxa1O-43">
+          <mxGeometry x="10" y="22" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jJlPswedMzSWKCKwxa1O-52" target="jJlPswedMzSWKCKwxa1O-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-52" value="wait" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="990" y="140" width="270" height="120" as="geometry">
+            <mxRectangle x="640" y="140" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jJlPswedMzSWKCKwxa1O-53" value="call wait to suspend/pause the&lt;br&gt;parent/current process&lt;br&gt;if creation of the child process was&lt;br&gt;successful" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="jJlPswedMzSWKCKwxa1O-52">
+          <mxGeometry x="20" y="40" width="210" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
