@@ -1,9 +1,36 @@
-<mxfile host="app.diagrams.net" modified="2023-11-16T10:13:28.936Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" version="22.1.2" etag="E6dQRkn_XxJwBToABVdM" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-17T00:36:04.854Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="AaBdIxraCf92xABkRsKC" version="22.1.2" type="github">
   <diagram name="Page-1" id="maEZZb6t3L37lV2eQuWd">
-    <mxGraphModel>
+    <mxGraphModel dx="445" dy="1859" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="aJbBLYKukd63OpYkIllz-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aJbBLYKukd63OpYkIllz-1" target="aJbBLYKukd63OpYkIllz-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aJbBLYKukd63OpYkIllz-1" value="get file from stdinp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="-680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aJbBLYKukd63OpYkIllz-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aJbBLYKukd63OpYkIllz-2" target="aJbBLYKukd63OpYkIllz-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aJbBLYKukd63OpYkIllz-2" value="open file" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="-680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aJbBLYKukd63OpYkIllz-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aJbBLYKukd63OpYkIllz-6" target="aJbBLYKukd63OpYkIllz-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aJbBLYKukd63OpYkIllz-6" value="EOF == false" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="-690" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aJbBLYKukd63OpYkIllz-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aJbBLYKukd63OpYkIllz-8" target="aJbBLYKukd63OpYkIllz-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aJbBLYKukd63OpYkIllz-8" value="opcode = first substr&lt;br&gt;&lt;br&gt;get opFun using&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;opcode" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="-700" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aJbBLYKukd63OpYkIllz-10" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="760" y="-680" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
